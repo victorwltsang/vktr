@@ -108,7 +108,7 @@ h6 {
 }
 
 .header-bio-summary {
-  width: 55%;
+  width: 65%;
   margin: 20px auto;
 }
 
@@ -142,7 +142,12 @@ section {
 }
 
 .section-padding {
-  padding: 0 50px 20px;
+  padding: 20px 50px;
+}
+
+.section-header {
+  font-size: 28px;
+  text-align: center;
 }
 
 .fa-margin-right {
@@ -150,13 +155,25 @@ section {
 }
 
 .job-title {
-  font-size: 26px;
+  font-size: 24px;
   color: #267048;
   margin: 6px 0;
 }
 
+.job-company {
+  font-size: 18px;
+}
+
+.job-date {
+  font-size: 18px;
+}
+
 .job-details {
   font-size: 20px;
+}
+
+#education h4 {
+  font-size: 18px;
 }
 
 .education-title {
@@ -183,6 +200,111 @@ section {
   font-size: 16px;
 }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover .card__image {
+  -webkit-filter: contrast(100%);
+  filter: contrast(100%);
+}
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card__image {
+  height: auto;
+  -webkit-filter: contrast(70%);
+  filter: contrast(70%);
+  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.card__title {
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: 300;
+  /*letter-spacing: 1px;*/
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.card__text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+#contact-form input,
+textarea {
+  border-color: #267048 !important;
+}
+
+.btn-send {
+  background-color: #267048;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .job-title {
     text-align: center;
@@ -193,7 +315,13 @@ section {
   .job-date {
     text-align: center;
   }
+  .header-bio-summary {
+    width: 90%;
+  }
   .text-center-mobile {
     text-align: center;
+  }
+  .skill {
+    display: none;
   }
 }
