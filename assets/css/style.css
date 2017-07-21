@@ -324,4 +324,10 @@ textarea {
   .skill {
     display: none;
   }
+  .section-padding {
+    padding: 20px 20px;
+  }
+  .job-details {
+    font-size: 14px;
+  }
 }
