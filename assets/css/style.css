@@ -4,6 +4,10 @@ body {
   position: relative;
 }
 
+html {
+  background-color: #267048;
+}
+
 p {
   font-size: 16px;
 }
@@ -332,6 +336,41 @@ textarea {
 .btn-send {
   background-color: #267048;
   color: white;
+}
+
+.footer {
+  background-color: #267048;
+  text-align: center;
+  padding: 20px 0 10px;
+  color: white;
+}
+
+.footer-social {
+  list-style-type: none;
+  margin-left: -30px;
+}
+
+.footer-social li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.footer-social a {
+  color: white;
+  display: inline-block;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 4px;
+  background-clip: padding-box;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.footer-social a:hover {
+  color: #fff;
+  border-color: #fff;
 }
 
 @media (max-width: 768px) {
