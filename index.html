@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -46,27 +46,27 @@
           <p class="header-bio-summary">Results-oriented and technically skilled professional, with eagerness to learn and utilize new technologies. Known for keen attention to detail and proven ability to identify and implement creative technology solutions.</p>
         </div>
 
-          <nav>
-            <ul class="nav custom-nav ">
-              <li><a class="scrollto" href="#portfolio">Portfolio</a></li>
-              <li><a class="scrollto" href="#experience">Experience</a></li>
-              <li><a class="scrollto" href="#education">Education</a></li>
-              <li><a class="scrollto" href="#contact">Contact</a></li>
-            </ul>
+        <nav>
+          <ul class="nav custom-nav ">
+            <li><a class="scrollto" href="#portfolio">Portfolio</a></li>
+            <li><a class="scrollto" href="#experience">Experience</a></li>
+            <li><a class="scrollto" href="#education">Education</a></li>
+            <li><a class="scrollto" href="#contact">Contact</a></li>
+          </ul>
 
-          </nav>
+        </nav>
 
       </div>
     </header>
 
     <section id="portfolio" class="container section-padding">
-      <h2 class="section-header "> Portfolio </h2>
+      <h2 class="section-header"> Portfolio </h2>
       <hr/>
       <ul class="cards">
         <li class="cards__item">
           <div class="card">
             <div class="card__image">
-              <a href="https://dangfoods.com" target="_blank"><img src="assets/images/dangfoods.jpg"></a>
+              <a href="#dangfoods" data-toggle="modal"><img src="assets/images/dangfoods.jpg"></a>
             </div>
             <div class="card__content">
               <div class="card__title">Dangfoods</div>
@@ -90,7 +90,7 @@
         <li class="cards__item">
           <div class="card">
             <div class="card__image">
-              <a href="https://victorwltsang.github.io/ATA/" target="_blank"><img src="assets/images/ata.jpg"></a>
+              <a href="#ata" data-toggle="modal"><img src="assets/images/ata.jpg"></a>
             </div>
             <div class="card__content">
               <div class="card__title">Authentic Truck Accessories</div>
@@ -124,7 +124,7 @@
         <li class="cards__item">
           <div class="card">
             <div class="card__image">
-              <a href="https://victorwltsang.github.io/CrazyCrystalsCollector/" target="_blank"><img src="assets/images/crazyCrystalsCollector.jpg"></a>
+              <a href="#crazyCrystals" data-toggle="modal"><img src="assets/images/crazyCrystalsCollector.jpg"></a>
             </div>
             <div class="card__content">
               <div class="card__title">Crazy Crystals Collector</div>
@@ -314,15 +314,186 @@
       <p>Copyright 2017 &copy; Victor Tsang</p>
     </footer>
 
-    <script
-    src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous"></script>
+    <div class="portfolio-modal modal fade" id="dangfoods" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="modal-body">
+            <h2 class="project-title">Dangfoods</h2>
+
+            <div class="row">
+              <div class="col-md-7">
+
+
+                <img src="assets/images/dangfoods.jpg" class="img-responsive img-centered" alt="">
+
+              </div>
+              <div class="col-md-5">
+                <div class="project-about">
+                  <h3>About this project</h3>
+                  <hr/>
+                  <p>Working as a team, We converted the client's mockup into a fully functional WordPress site. The website is responsive and have a back-end dashboard that allows them to add new products to their website easily.</p>
+                </div>
+
+                <div class="project-tech">
+                  <h3>Technologies and skills involved</h3>
+                  <hr/>
+
+                  <ul class="project-tech-list">
+
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Zurb Foundation</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>PHP</li>
+                    <li>Responsive Web Design</li>
+                    <li>WordPress Theme Development</li>
+                    <li>Adobe Photoshop</li>
+                  </ul>
+                </div>
+
+                <div class="project-links">
+                  <h3>Project links</h3>
+                  <hr/>
+
+                  <ul class="project-links-list list-inline">
+                    <li><a class="btn btn-main-green btn-lg" href="https://dangfoods.com" target="_blank">View Online</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="ata" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="modal-body">
+            <h2 class="project-title">Authentic Truck Accessories</h2>
+
+            <div class="row">
+              <div class="col-md-7">
+
+
+                <img src="assets/images/ata.jpg" class="img-responsive img-centered" alt="">
+
+              </div>
+              <div class="col-md-5">
+                <div class="project-about">
+                  <h3>About this project</h3>
+                  <hr/>
+                  <p>At my first job, I self taught myself HTML, CSS, and Photoshop to build the company's website. I am very proud of this project because it was the first complete website that I have ever built.</p>
+                </div>
+
+                <div class="project-tech">
+                  <h3>Technologies and skills involved</h3>
+                  <hr/>
+
+                  <ul class="project-tech-list">
+
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Adobe Photoshop</li>
+                  </ul>
+                </div>
+
+                <div class="project-links">
+                  <h3>Project links</h3>
+                  <hr/>
+
+                  <ul class="project-links-list list-inline">
+                    <li><a class="btn btn-main-green btn-lg" href="https://victorwltsang.github.io/ATA" target="_blank">View Online</a></li>
+<li><a class="btn btn-main-green btn-lg" href="https://github.com/victorwltsang/ATA" target="_blank">View Github Repo</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="crazyCrystals" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="modal-body">
+            <h2 class="project-title">Crazy Crystals Collector Game</h2>
+
+            <div class="row">
+              <div class="col-md-7">
+
+
+                <img src="assets/images/crazyCrystalsCollector.jpg" class="img-responsive img-centered" alt="">
+
+              </div>
+              <div class="col-md-5">
+                <div class="project-about">
+                  <h3>About this project</h3>
+                  <hr/>
+                  <p>Welcome to my Crazy Crystals Collector Game. The goal of the game is to reach the target points by clicking on the crystals. Each crystal will have a random value for each round. I created the layout with Flexbox, so that it would be mobile responsive and I added animation using CSS3 and TweenMax.js, an animation library.</p>
+                </div>
+
+                <div class="project-tech">
+                  <h3>Technologies and skills involved</h3>
+                  <hr/>
+
+                  <ul class="project-tech-list">
+
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Flexbox</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>TweenMax.js</li>
+                    <li>Single Page App</li>
+                  </ul>
+                </div>
+
+                <div class="project-links">
+                  <h3>Project links</h3>
+                  <hr/>
+
+                  <ul class="project-links-list list-inline">
+                    <li><a class="btn btn-main-green btn-lg" href="https://victorwltsang.github.io/CrazyCrystalsCollector/" target="_blank">View Online</a></li>
+<li><a class="btn btn-main-green btn-lg" href="https://github.com/victorwltsang/CrazyCrystalsCollector" target="_blank">View Github Repo</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
 
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="assets/js/jquery.sticky.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
