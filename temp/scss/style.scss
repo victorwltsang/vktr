@@ -28,7 +28,8 @@ h6 {
   margin: 6px 0;
 }
 
-.btn-main-green {
+.btn-main-green,
+.btn-main-green:visited {
   background-color: $main-hue;
   color           : white;
   transition      : background-color 0.2s ease;

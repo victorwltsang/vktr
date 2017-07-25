@@ -19,7 +19,8 @@ h6 {
   margin: 6px 0;
 }
 
-.btn-main-green {
+.btn-main-green,
+.btn-main-green:visited {
   background-color: #267048;
   color: white;
   transition: background-color 0.2s ease;
